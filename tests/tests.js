@@ -570,8 +570,8 @@ exports.defineAutoTests = function ()
       {
         expect(this.status).toBe(200);
         expect(this.response).toBeDefined();        
-        expect(this.response).toContain('content-disposition: form-data; name="param1"');
-        expect(this.response).toContain('content-disposition: form-data; name="param2"');
+        expect(this.response).toContain('Content-Disposition: form-data; name="param1"');
+        expect(this.response).toContain('Content-Disposition: form-data; name="param2"');
         done();
       }
 
